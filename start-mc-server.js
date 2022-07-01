@@ -4,18 +4,19 @@
 
 //user const, please edit these
 
-const zonename = 'us-west2-a';
-const vmname = 'mc-server-v1';
-const ownername = "@goodraboy"
-const mcport = 25565;
+const ZONE_NAME = 'us-west2-a';
+const VM_NAME = 'mc-server-gcp-test';
+const TAG = 'mc-server-gcp-test'; //i just want this to be the same as the vm name
+const OWNER_NAME = "@goodraboy";
+const MC_PORT = 25565;
 
 //end of user const
 
 const http = require('http');
 const Compute = require('@google-cloud/compute');
 const compute = Compute();
-const zone = compute.zone(zonename);
-const vm = zone.vm(vmname);
+const zone = compute.zone(ZONE_NAME);
+const vm = zone.vm(VM_NAME);
 const fwname = 'minecraft-fw-rule-' + Math.floor(new Date() / 1000);
 
 async function get_server_ip() {
@@ -40,8 +41,8 @@ async function sleep(milliseconds) {
 
 exports.startInstance = async function startInstance(req, res) {
     // Start the VM
-    const zone = compute.zone('us-west2-a');
-    const vm = zone.vm('mc-server-v1');
+    const zone = compute.zone(ZONE_NAME);
+    const vm = zone.vm(VM_NAME);
     console.log('about to start a VM');
     vm.start(function (err, operation, apiResponse) {
         console.log('instance start successfully');
@@ -62,9 +63,9 @@ exports.startInstance = async function startInstance(req, res) {
 
     // Set the Firewall configs
     const config = {
-        protocols: {tcp: [mcport]},
+        protocols: {tcp: [MC_PORT]},
         ranges: [callerip + '/32'],
-        tags: ['minecraft-server']
+        tags: [TAG]
     };
 
     function callback(err, firewall, operation, apiResponse) {
@@ -74,8 +75,8 @@ exports.startInstance = async function startInstance(req, res) {
     compute.createFirewall(fwname, config, callback);
 
     res.status(200).send(
-        `Minecraft Server Started! You are now spending [${ownername}]'s hard earned cash! <br />
-        The IP address of the Minecraft server is: [${server_ip}:${mcport}]<br />
+        `Minecraft Server Started! You are now spending [${OWNER_NAME}]'s hard earned cash! <br />
+        The IP address of the Minecraft server is: [${server_ip}:${MC_PORT}]<br />
         Your IP address is [${callerip}]<br />
         A Firewall rule named [${fwname}] has been created for you.`);
 };
