@@ -1,0 +1,7 @@
+{
+  "name": "minecraft-server-gcp",
+  "version": "1.0.0",
+  "dependencies": {
+    "@google-cloud/compute": "^3.3.0"
+  }
+}
