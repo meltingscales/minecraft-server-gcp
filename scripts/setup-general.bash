@@ -3,6 +3,8 @@
 sudo apt-get install openjdk-17-jdk
 sudo apt-get install screen
 sudo apt-get install curl wget lynx
+sudo apt-get install unzip
+
 
 mkdir ~/minecraft
 
