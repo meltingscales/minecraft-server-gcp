@@ -16,6 +16,6 @@ sudo cp -r ./jdk1.7.0_80/ /opt/java/jdk1.7.0_80
 
 ls -lash /opt/java
 
-echo "Done :)"
+echo "Done :) see /opt/java/ for your new ancient jdk"
 
 popd
