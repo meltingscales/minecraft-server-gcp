@@ -1,4 +1,4 @@
-# note: please put me in /etc/systemd/system/
+# note: please put me in /etc/systemd/system/minecraft-ftb-monster-1.1.2-1.6.4.service
 # and run   `systemctl enable   minecraft-ftb-monster-1.1.2-1.6.4`
 # or        `systemctl disable  minecraft-ftb-monster-1.1.2-1.6.4`
 # or        `systemctl start    minecraft-ftb-monster-1.1.2-1.6.4`
@@ -20,7 +20,7 @@ Restart=always
 RestartSec=5
 User=1001
 WorkingDirectory=/home/henryfbp/minecraft/minecraft-server-gcp/templates/ftb-monster-1.1.2-1.6.4/
-ExecStart=/usr/bin/env bash ServerStart.sh
+ExecStart=/opt/java/jdk1.7.0_80/bin/java -Xms2048m -Xmx2048m -XX:PermSize=256m -jar FTBServer-1.6.4-965.jar nogui
 
 [Install]
 WantedBy=multi-user.target
