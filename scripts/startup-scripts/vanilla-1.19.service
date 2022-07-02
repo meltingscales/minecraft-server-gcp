@@ -18,7 +18,7 @@ Restart=always
 RestartSec=5
 User=1001
 WorkingDirectory=/home/henryfbp/minecraft/minecraft-server-gcp/template-server-vanilla-1.19/
-ExecStart=/usr/bin/env java ./minecraft_server*.jar
+ExecStart=/usr/bin/env java -jar ./minecraft_server.1.19.jar
 
 [Install]
 WantedBy=multi-user.target
