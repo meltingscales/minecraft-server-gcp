@@ -7,8 +7,8 @@ sudo apt-get install curl wget lynx
 mkdir ~/minecraft
 pushd ~/minecraft
 
-git clone git@github.com:HenryFBP/minecraft-server-gcp.git
+git clone https://github.com/HenryFBP/minecraft-server-gcp.git
 
-pushd ./minecraft-server-gcp
+pushd ./minecraft-server-gcp/template-server/
 
 ./startup.bash
