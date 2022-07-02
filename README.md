@@ -16,7 +16,11 @@ you need to run it with Java 1.7 - download here:
 
 https://github.com/HenryFBP/minecraft-server-gcp/releases/download/jdk-7-windows-64/jdk-7u80-windows-x64.exe
 
-then, you need to edi tthe run optinos on your Minecraft instance tro use Java 1.7
+then, you need to edit the run options on your Minecraft instance to use Java 1.7
+
+This may look different depending on what launcher you use.
+
+My Java 7 is installed at `C:\Program Files\Java\jdk1.7.0_80`
 
 ![image](./img/oldasspack.png)
 
