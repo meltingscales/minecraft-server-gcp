@@ -4,6 +4,14 @@ a minecraft server using Google Cloud Platform
 
 for fun :)
 
+## notes
+
+You need java 7/8 for some packs.
+
+See scripts and GitHub releases :)
+
+## inspiration
+
 Inspired by:
 
 https://www.reddit.com/r/googlecloud/comments/j3n7m4/minecraft_server_on_gcp_cost_135_last_month_what/
