@@ -18,7 +18,7 @@ https://github.com/HenryFBP/minecraft-server-gcp/releases/download/jdk-7-windows
 
 then, you need to edi tthe run optinos on your Minecraft instance tro use Java 1.7
 
-![image](https://user-images.githubusercontent.com/3236324/176985267-d285763a-4319-49c9-b718-6a3dbec5f959.png)
+![image](./img/oldasspack.png)
 
 ## inspiration
 
