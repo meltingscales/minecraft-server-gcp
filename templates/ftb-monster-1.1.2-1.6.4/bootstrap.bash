@@ -13,9 +13,10 @@ if [ ! -d ./mods/ ]; then
 
         unzip $FILENAME
 
-        chmod +x ./*.sh
     fi
 
 else 
-    echo "You already have mods, not downloading curseforge zip."
+    echo "You already have folder ./mods/, I am not downloading curseforge zip."
 fi
+
+chmod +x ./*.sh
