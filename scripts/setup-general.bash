@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-mkdir ~/minecraft
-
 sudo apt-get install openjdk-17-jdk
 sudo apt-get install screen
 sudo apt-get install curl wget lynx
+
+mkdir ~/minecraft
 
 pushd ~/minecraft
 
