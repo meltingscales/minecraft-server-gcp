@@ -1,8 +1,10 @@
 # note: please put me in /etc/systemd/system/
-# and run   `systemctl enable   vanilla-1.19`
-# or        `systemctl start    vanilla-1.19`
-# or        `systemctl status   vanilla-1.19`
-# or        `journalctl -u      vanilla-1.19`
+# and run   `systemctl enable   minecraft-vanilla-1.19`
+# or        `systemctl disable  minecraft-vanilla-1.19`
+# or        `systemctl start    minecraft-vanilla-1.19`
+# or        `systemctl stop     minecraft-vanilla-1.19`
+# or        `systemctl status   minecraft-vanilla-1.19`
+# or        `journalctl -u      minecraft-vanilla-1.19`
 [Unit]
 Description=Vanilla Minecraft 1.19
 After=network.target
