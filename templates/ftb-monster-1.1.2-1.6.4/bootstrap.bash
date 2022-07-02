@@ -12,6 +12,8 @@ if [ ! -d ./mods/ ]; then
         curl -L $FILEURL --output $FILENAME
 
         unzip $FILENAME
+
+        chmod +x ./*.sh
     fi
 
 else 
