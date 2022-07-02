@@ -1,0 +1,26 @@
+# note: please put me in /etc/systemd/system/
+# and run   `systemctl enable   minecraft-ftb-monster-1.1.2-1.6.4`
+# or        `systemctl disable  minecraft-ftb-monster-1.1.2-1.6.4`
+# or        `systemctl start    minecraft-ftb-monster-1.1.2-1.6.4`
+# or        `systemctl stop     minecraft-ftb-monster-1.1.2-1.6.4`
+# or        `systemctl status   minecraft-ftb-monster-1.1.2-1.6.4`
+# or        `journalctl -u      minecraft-ftb-monster-1.1.2-1.6.4`
+[Unit]
+Description=minecraft-ftb-monster-1.1.2-1.6.4
+After=network.target
+# keep trying to start this forever
+StartLimitIntervalSec=0
+# stop trying if we keep failing
+StartLimitBurst=5
+StartLimitIntervalSec=10
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=1001
+WorkingDirectory=/home/henryfbp/minecraft/minecraft-server-gcp/templates/ftb-monster-1.1.2-1.6.4/
+ExecStart=/usr/bin/env bash ServerStart.sh
+
+[Install]
+WantedBy=multi-user.target
