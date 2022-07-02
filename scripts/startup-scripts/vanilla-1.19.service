@@ -17,7 +17,7 @@ Type=simple
 Restart=always
 RestartSec=5
 User=1001
-WorkingDirectory=~/minecraft/minecraft-server-gcp/template-server-vanilla-1.19/
+WorkingDirectory=/home/henryfbp/minecraft/minecraft-server-gcp/template-server-vanilla-1.19/
 ExecStart=/usr/bin/env java ./minecraft_server*.jar
 
 [Install]
