@@ -37,3 +37,5 @@ https://cloud.google.com/solutions/gaming/minecraft-server
 https://cloud.google.com/scheduler/docs/start-and-stop-compute-engine-instances-on-a-schedule
 
 https://github.com/Arconapalus/GCP-example-solutions/blob/master/GCP_Scripts/start_stop_vm_script.md
+
+https://hub.docker.com/r/jaysonsantos/minecraft-ftb-skyfactory3
