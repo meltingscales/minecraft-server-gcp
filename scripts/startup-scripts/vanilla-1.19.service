@@ -1,0 +1,24 @@
+# note: please put me in /etc/systemd/system/
+# and run   `systemctl enable   vanilla-1.19`
+# or        `systemctl start    vanilla-1.19`
+# or        `systemctl status   vanilla-1.19`
+# or        `journalctl -u      vanilla-1.19`
+[Unit]
+Description=Vanilla Minecraft 1.19
+After=network.target
+# keep trying to start this forever
+StartLimitIntervalSec=0
+# stop trying if we keep failing
+StartLimitBurst=5
+StartLimitIntervalSec=10
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=1001
+WorkingDirectory=~/minecraft/minecraft-server-gcp/template-server-vanilla-1.19/
+ExecStart=/usr/bin/env java ./minecraft_server*.jar
+
+[Install]
+WantedBy=multi-user.target
