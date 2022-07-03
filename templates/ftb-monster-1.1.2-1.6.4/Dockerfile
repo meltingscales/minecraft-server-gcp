@@ -24,8 +24,6 @@ ADD     ./server.properties ./
 
 RUN     bash ./bootstrap.bash
 
-EXPOSE  25565
-
 ENTRYPOINT [ \
     "/opt/java/jdk1.7.0_80/bin/java",\
     "-Xms2048m",\
