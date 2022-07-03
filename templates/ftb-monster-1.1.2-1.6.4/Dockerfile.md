@@ -1,6 +1,6 @@
 # building
 
-    docker build ./ --tag=henryfbp/ftb-monster-112164:latest
+    docker build ./ --tag=henryfbp/ftb-monster-112164:latest --no-cache
 
 # test
 
