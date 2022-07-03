@@ -1,5 +1,3 @@
-TODO fix port issue? Is this due to Docker or something else??
-
 # building
 
     docker build ./ --tag=henryfbp/ftb-monster-112164:latest --progress=plain --no-cache 
