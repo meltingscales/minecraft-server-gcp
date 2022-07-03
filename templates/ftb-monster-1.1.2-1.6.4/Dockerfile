@@ -19,7 +19,8 @@ RUN     mkdir /minecraft/
 
 WORKDIR /minecraft/
 
-ADD     ./bootstrap.bash /minecraft/
+ADD     ./bootstrap.bash    ./
+ADD     ./server.properties ./
 
 RUN     bash ./bootstrap.bash
 
