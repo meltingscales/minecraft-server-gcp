@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-apt-get install screen
-apt-get install curl wget lynx
-apt-get install unzip
+apt-get install -y screen
+apt-get install -y curl wget lynx
+apt-get install -y unzip
