@@ -11,8 +11,8 @@ curl -L $FILEURL --output $FILENAME
 
 tar -xzvf $FILENAME
 
-sudo mkdir -p /opt/java/
-sudo cp -r ./jdk1.7.0_80/ /opt/java/jdk1.7.0_80
+mkdir -p /opt/java/
+cp -r ./jdk1.7.0_80/ /opt/java/jdk1.7.0_80
 
 ls -lash /opt/java
 
