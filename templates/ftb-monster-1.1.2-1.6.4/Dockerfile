@@ -13,6 +13,8 @@ WORKDIR /tmp/minecraft-server-gcp/
 RUN     bash ./scripts/setup-apt-deps.bash
 RUN     bash ./scripts/setup-java-ancient.bash
 
+RUN     ls /opt/java/ -lash
+
 RUN     mkdir /minecraft/
 
 WORKDIR /minecraft/
