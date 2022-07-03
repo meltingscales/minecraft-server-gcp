@@ -4,7 +4,7 @@
 
 # test
 
-note: `docker volume` and `--mount` is necessary to save your changes to the MC server's world if you Docker Container shuts down.
+note: `docker volume` and `--mount` is necessary to save your changes to the MC server's world if your Docker Container shuts down.
 
     docker volume create ftb-monster-112164-volume
 
