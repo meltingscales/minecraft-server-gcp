@@ -10,7 +10,7 @@ for fun :)
 
 - $10 yearly for domains. Subdomains are free.
 - Static VM IPs are very, very cheap. Pennies per day.
-- Seems to be about $1.79 per day for 1 VM, for a 6GB modpack that's relatively old. May be worth checking out DigitalOcean, CreeperHost, NodeCraft, etc.
+- Seems to be about $1.79 per day for `e2-custom-2-6144` (1 VM, 2 CPU, 6GB) with a modpack that's relatively old (2016). May be worth checking out DigitalOcean, CreeperHost, NodeCraft, etc.
 
 ## notes
 
