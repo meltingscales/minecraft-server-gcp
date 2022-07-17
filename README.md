@@ -4,6 +4,10 @@ a minecraft server using Google Cloud Platform
 
 for fun :)
 
+## costs
+
+Seems to be about $1.79 per day for a 6GB modpack that's relatively old. May be worth checking out DigitalOcean, CreeperHost, NodeCraft, etc.
+
 ## notes
 
 You need java 7/8 for some packs.
