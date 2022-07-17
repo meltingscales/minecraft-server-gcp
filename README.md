@@ -6,7 +6,11 @@ for fun :)
 
 ## costs
 
-Seems to be about $1.79 per day for a 6GB modpack that's relatively old. May be worth checking out DigitalOcean, CreeperHost, NodeCraft, etc.
+### GCP
+
+- $10 yearly for domains. Subdomains are free.
+- Static VM IPs are very, very cheap. Pennies per day.
+- Seems to be about $1.79 per day for 1 VM, for a 6GB modpack that's relatively old. May be worth checking out DigitalOcean, CreeperHost, NodeCraft, etc.
 
 ## notes
 
